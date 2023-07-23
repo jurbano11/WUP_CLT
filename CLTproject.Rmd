@@ -88,6 +88,8 @@ print(paste('mean = ', mean(my1000$k4),' sd = ',sd(my1000$k4)))
 
 # Now finish by adding blocks with numb being 9, then 16, 25, and 36. be sure to mention how the standard deviation progresses as the sample size changes,
 
+
+### numb = 9
 ```{r}
 numb = 9
 Hdata = Homers_data[sample(1:1000,size=numb*1000, replace=T),"kkardashtemp"]
@@ -114,7 +116,7 @@ we expect 14 and we get `r sd(my1000$k3)`
 
 
 
-
+### numb = 16
 ```{r}
 numb = 16
 Hdata = Homers_data[sample(1:1000,size=numb*1000, replace=T),"kkardashtemp"]
@@ -138,6 +140,9 @@ print(paste('mean = ', mean(my1000$k4),' sd = ',sd(my1000$k4)))
 The standard deviation is now a quarter of what it was before which now it is 10.
 we expect 7 and we got `r sd(my1000$k4)`
 
+
+
+### numb = 25
 ```{r}
 numb = 25
 Hdata = Homers_data[sample(1:1000,size=numb*1000, replace=T),"kkardashtemp"]
@@ -162,7 +167,7 @@ we expect 8 and we got `r sd(my1000$k5)`
 what i expected was a little off from what the code gave us for the expected value. The standard deviation continues to change with this numb value as well
 
 
-
+### numb = 36
 ```{r}
 numb = 36
 Hdata = Homers_data[sample(1:1000,size=numb*1000, replace=T),"kkardashtemp"]
