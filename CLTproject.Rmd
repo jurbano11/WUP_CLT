@@ -158,6 +158,8 @@ p + ggtitle("n = 25") +
 print(paste('mean = ', mean(my1000$k5),' sd = ',sd(my1000$k5)))
 ```
 
+we expect 8 and we got `r sd(my1000$k5)`
+what i expected was a little off from what the code gave us for the expected value. The standard deviation continues to change with this numb value as well
 
 
 
