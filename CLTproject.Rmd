@@ -107,3 +107,8 @@ p + ggtitle("n = 9") +
 
 print(paste('mean = ', mean(my1000$k3),' sd = ',sd(my1000$k3)))
 ```
+
+Take the standard deviation and put it in the data that is from the central limit.The standard deviation shrinks as the number gets higher example 4 is divided by 2, 9 is divided by 3. 16 divided by 4 and so on. The standard deviation is with n - 9. The expected value is. The mean will always stay the same and the standard deviation will always shrink. This numb is a demonstration of what happens.
+`r sd(my1000$k3)`
+we expect 14 and we get `r sd(my1000$k3)`
+
