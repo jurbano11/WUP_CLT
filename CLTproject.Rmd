@@ -138,5 +138,28 @@ print(paste('mean = ', mean(my1000$k4),' sd = ',sd(my1000$k4)))
 The standard deviation is now a quarter of what it was before which now it is 10.
 we expect 7 and we got `r sd(my1000$k4)`
 
+```{r}
+numb = 25
+Hdata = Homers_data[sample(1:1000,size=numb*1000, replace=T),"kkardashtemp"]
+mdata  <-matrix(Hdata,nrow=1000,ncol=numb)
+x.avg <- apply(mdata,1,mean)
+my1000$k5 = x.avg
+
+
+p <- ggplot(my1000, aes(x=k5),col=sex) + 
+  geom_density() +
+
+# Add mean line
+ geom_vline(aes(xintercept=mean(k5)),
+            color="blue", linetype="dashed", size=1)
+p + ggtitle("n = 25") +
+  xlab("temperature") + ylab(" density")
+
+print(paste('mean = ', mean(my1000$k5),' sd = ',sd(my1000$k5)))
+```
+
+
+
+
 
 
