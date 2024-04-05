@@ -137,8 +137,7 @@ p + ggtitle("n = 16") +
 print(paste('mean = ', mean(my1000$k4),' sd = ',sd(my1000$k4)))
 ```
 
-The standard deviation is now a quarter of what it was before which now it is 10.
-we expect 7 and we got `r sd(my1000$k4)`
+The standard deviation is now a quarter of what it was before which now it is 10.2517732. We expect 10 and we got `r sd(my1000$k4)`
 
 
 
